@@ -1,4 +1,4 @@
-CREATE TABLE `quiet-sum-368700.data_warehouse.Customers_table` (
+CREATE TABLE 'quiet-sum-368700.data_warehouse.Customers_table' (
   customer_id INT64,
   customer_name STRING,
   customer_email STRING,
@@ -6,7 +6,7 @@ CREATE TABLE `quiet-sum-368700.data_warehouse.Customers_table` (
   PRIMARY KEY (customer_id)
 );
 
-CREATE TABLE `quiet-sum-368700.data_warehouse.products` (
+CREATE TABLE 'quiet-sum-368700.data_warehouse.products' (
   product_id INT64,
   product_name STRING,
   category STRING,
@@ -14,7 +14,7 @@ CREATE TABLE `quiet-sum-368700.data_warehouse.products` (
   PRIMARY KEY (product_id)
 );
 
-CREATE TABLE `quiet-sum-368700.data_warehouse.sales` (
+CREATE TABLE 'quiet-sum-368700.data_warehouse.sales' (
   order_id INT64,
   customer_id INT64,
   product_id INT64,
