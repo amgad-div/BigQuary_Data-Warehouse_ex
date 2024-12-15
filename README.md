@@ -8,7 +8,7 @@ This project demonstrates how to create a data warehouse in BigQuery using a sta
    - [Create Dimension Tables](#create-dimension-tables)
    - [Create Fact Table](#create-fact-table)
 3. [Insert Data](#insert-data)
-4. [Query the Data](#query-the-data)
+4. [Query the Data](#Query-the_Data_and_make_insights)
 
 
 ## Setup
