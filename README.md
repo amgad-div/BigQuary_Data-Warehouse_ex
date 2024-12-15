@@ -9,8 +9,6 @@ This project demonstrates how to create a data warehouse in BigQuery using a sta
    - [Create Fact Table](#create-fact-table)
 3. [Insert Data](#insert-data)
 4. [Query the Data](#query-the-data)
-5. [Advanced](#advanced)
-   - [Automating with Python](#automating-with-python)
 
 
 ## Setup
@@ -27,6 +25,8 @@ This project demonstrates how to create a data warehouse in BigQuery using a sta
    - Use the project selector at the top of the page to choose your project.
 
 ### Create Dataset
+#### you can create using sql [Create_tables_Star_schema.sql](https://github.com/amgad-div/BigQuary_Data-Warehouse_ex/blob/main/Create_tables_Star_schema.sql)
+#### or cteate manually as following: 
 1. **Open BigQuery Console**:
    - Navigate to **BigQuery** from the side menu.
 
@@ -43,7 +43,6 @@ This project demonstrates how to create a data warehouse in BigQuery using a sta
 1. **Open BigQuery Console**:
    - Navigate to your dataset (e.g., `data_warehouse`).
   
-#### you can create using sql [s](https://github.com/amgad-div/BigQuary_Data-Warehouse_ex/blob/main/Create_tables_Star_schema.sql)
 
 2. **Create a New Table**:
    - Click **Create Table**.
@@ -91,42 +90,10 @@ This project demonstrates how to create a data warehouse in BigQuery using a sta
    - Click **Create Table**.
 
 ## Insert Data
+#### Insert using sql [insert_data.sql](https://github.com/amgad-div/BigQuary_Data-Warehouse_ex/blob/main/insert_data.sql)
 
-### Manually Insert Data
-1. **Open Table Details**:
-   - Select your table (e.g., `sales`).
 
-2. **Insert Data**:
-   - Click on **Insert**.
-   - Manually enter data for each column.
-   - Click **Save**.
+## Query the Data and make insights
+#### using sql[query_data.sql](https://github.com/amgad-div/BigQuary_Data-Warehouse_ex/blob/main/query_data.sql)
 
-### Upload Data from a File
-1. **Open Table Details**:
-   - Select your table (e.g., `sales`).
-
-2. **Upload Data**:
-   - Click on **Upload**.
-   - Select your file (e.g., `sales_data.csv`).
-   - Map columns and click **Upload**.
-
-## Query the Data
-
-### Example Queries
-
-#### Total Sales per Customer
-```sql
-SELECT
-  c.customer_name,
-  SUM(s.total) AS total_spent
-FROM
-  `my-project-id.data_warehouse.sales` s
-JOIN
-  `my-project-id.data_warehouse.customers` c
-ON
-  s.customer_id = c.customer_id
-GROUP BY
-  c.customer_name
-ORDER BY
-  total_spent DESC;
 
