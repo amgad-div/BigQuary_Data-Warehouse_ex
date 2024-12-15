@@ -96,4 +96,5 @@ This project demonstrates how to create a data warehouse in BigQuery using a sta
 ## Query the Data and make insights
 #### using sql[query_data.sql](https://github.com/amgad-div/BigQuary_Data-Warehouse_ex/blob/main/query_data.sql)
 
-
+## Google BigQuary
+![Google BigQuary_screen_shoot_project](https://github.com/amgad-div/BigQuary_Data-Warehouse_ex/blob/main/images/test.png)
