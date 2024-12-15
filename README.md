@@ -42,6 +42,8 @@ This project demonstrates how to create a data warehouse in BigQuery using a sta
 #### Create Customers Table
 1. **Open BigQuery Console**:
    - Navigate to your dataset (e.g., `data_warehouse`).
+  
+#### you can create using sql [s](https://github.com/amgad-div/BigQuary_Data-Warehouse_ex/blob/main/Create_tables_Star_schema.sql)
 
 2. **Create a New Table**:
    - Click **Create Table**.
